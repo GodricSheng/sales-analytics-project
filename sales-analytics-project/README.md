@@ -83,7 +83,7 @@ ON o.customer_id = c.customer_id
 JOIN products p
 ON o.product_id = p.product_id;
 
-### Business Analysis
+### 3. Business Analysis
 #### Revenue by Product Category
 SELECT p.category,
        SUM(p.price * o.quantity) AS revenue
@@ -117,7 +117,7 @@ ON o.product_id = p.product_id
 GROUP BY c.country
 ORDER BY total_revenue DESC
 
-### Visualization
+### 4. Visualization
 
 A bar chart was created to visualize revenue by product category.
 
